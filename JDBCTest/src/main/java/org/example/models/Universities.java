@@ -40,7 +40,7 @@ public class Universities {
 
     @Override
     public String toString() {
-        return "Universities{" +
+        return "Universities.xml{" +
                 "universiyId=" + universityId +
                 ", universityName='" + universityName + '\'' +
                 ", addressId=" + addressId +

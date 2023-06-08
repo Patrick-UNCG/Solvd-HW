@@ -21,7 +21,7 @@ public class UniversitiesDAO implements IUniversitiesDAO {
     public Universities getUniversityById(int id) {
         try{
             connection = connectionPool.retrieve();
-            pr = connection.prepareStatement("Select * from Universities where University_ID=?");
+            pr = connection.prepareStatement("Select * from Universities.xml where University_ID=?");
             pr.setInt(1, id);
             pr.execute();
             resultSet = pr.getResultSet();
@@ -49,7 +49,7 @@ public class UniversitiesDAO implements IUniversitiesDAO {
     public void saveUniversity(Universities university) {
         try {
             connection = connectionPool.retrieve();
-            pr = connection.prepareStatement("Insert into Universities (University_ID, University_Name, Addresses_Address_ID) Values (?,?,?)");
+            pr = connection.prepareStatement("Insert into Universities.xml (University_ID, University_Name, Addresses_Address_ID) Values (?,?,?)");
             pr.setInt(1, university.getUniversityId());
             pr.setString(2, university.getUniversityName());
             pr.setInt(3, university.getAddressId());
@@ -70,7 +70,7 @@ public class UniversitiesDAO implements IUniversitiesDAO {
     public void updateUniversity(Universities university) {
         try {
             connection = connectionPool.retrieve();
-            pr = connection.prepareStatement("Update Universities Set`University_Name`=?, 'Addresses_Address_ID'=? where University_ID=?");
+            pr = connection.prepareStatement("Update Universities.xml Set`University_Name`=?, 'Addresses_Address_ID'=? where University_ID=?");
             pr.setString(1, university.getUniversityName());
             pr.setInt(2, university.getAddressId());
             pr.setInt(3, university.getUniversityId());
@@ -91,7 +91,7 @@ public class UniversitiesDAO implements IUniversitiesDAO {
     public void removeUniversity(Universities university) {
         try {
             connection = connectionPool.retrieve();
-            pr = connection.prepareStatement("Delete from Universities where University_ID=?");
+            pr = connection.prepareStatement("Delete from Universities.xml where University_ID=?");
             pr.setInt(1, university.getUniversityId());
             pr.executeUpdate();
         } catch (SQLException e) {
