@@ -1,5 +1,11 @@
 package org.example.models;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+
+@XmlRootElement(name = "region")
+@XmlType(propOrder = { "regionId", "regionName" })
+
 public class Regions {
     int regionId;
     String regionName;
