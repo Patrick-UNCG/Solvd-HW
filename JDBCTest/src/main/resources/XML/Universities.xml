@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="Universities.xsd">
+    <university>
+        <universityId>1</universityId>
+        <universityName>Harvard</universityName>
+        <universityAddressId>1</universityAddressId>
+    </university>
+</universities>

@@ -1,5 +1,11 @@
 package org.example.models;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
+
+@XmlRootElement(name = "student")
+@XmlType(propOrder = { "studentId", "firstName", "lastName" })
 public class Student {
     private String firstName;
     private String lastName;
@@ -9,7 +15,7 @@ public class Student {
     private int universityId;
 
 
-    public Student(String firstName, String lastName, int studentId, int universityId) {
+    public Student(int studentId,String firstName, String lastName, int universityId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentId = studentId;
@@ -44,6 +50,7 @@ public class Student {
         this.studentId = studentId;
     }
 
+    @XmlTransient
     public int getUniversityId() {
         return universityId;
     }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Courses.xsd">
+    <course>
+        <courseId>1</courseId>
+        <courseName>Biology</courseName>
+    </course>
+    <course>
+        <courseId>2</courseId>
+        <courseName>Calculus</courseName>
+    </course>
+    <course>
+        <courseId>3</courseId>
+        <courseName>History</courseName>
+    </course>
+</courses>

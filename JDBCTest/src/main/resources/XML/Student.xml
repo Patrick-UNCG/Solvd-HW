@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Student.xsd">
+    <student>
+        <studentId>1</studentId>
+        <studentFirstName>John</studentFirstName>
+        <studentLastName>Smith</studentLastName>
+        <studentUniversityId>1</studentUniversityId>
+    </student>
+    <student>
+        <studentId>2</studentId>
+        <studentFirstName>Mary</studentFirstName>
+        <studentLastName>Johnson</studentLastName>
+        <studentUniversityId>1</studentUniversityId>
+    </student>
+    <student>
+        <studentId>3</studentId>
+        <studentFirstName>Jesse</studentFirstName>
+        <studentLastName>Robinson</studentLastName>
+        <studentUniversityId>1</studentUniversityId>
+    </student>
+    <student>
+        <studentId>4</studentId>
+        <studentFirstName>Susie</studentFirstName>
+        <studentLastName>Le</studentLastName>
+        <studentUniversityId>1</studentUniversityId>
+    </student>
+</students>

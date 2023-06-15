@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<regions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Region.xsd">
+    <region>
+        <regionId>1</regionId>
+        <regionName>North America</regionName>
+    </region>
+    <region>
+        <regionId>2</regionId>
+        <regionName>South America</regionName>
+    </region>
+    <region>
+        <regionId>3</regionId>
+        <regionName>Europe</regionName>
+    </region>
+</regions>
