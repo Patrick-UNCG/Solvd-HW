@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="school">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="students">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="student" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="studentId" type="xs:positiveInteger"/>
+                                        <xs:element name="studentFirstName" type="xs:string"/>
+                                        <xs:element name="studentLastName" type="xs:string"/>
+                                        <xs:element name="studentUniversityId" type="xs:positiveInteger"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="professors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="professor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="professorId" type="xs:positiveInteger"/>
+                                        <xs:element name="professorFirstName" type="xs:string"/>
+                                        <xs:element name="professorLastName" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="courses">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="course" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="courseId" type="xs:positiveInteger"/>
+                                        <xs:element name="courseName" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="universities">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="university" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="universityId" type="xs:positiveInteger"/>
+                                        <xs:element name="universityName" type="xs:string"/>
+                                        <xs:element name="universityAddressId" type="xs:int"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="regions">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="region" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="regionId" type="xs:positiveInteger"/>
+                                        <xs:element name="regionName" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

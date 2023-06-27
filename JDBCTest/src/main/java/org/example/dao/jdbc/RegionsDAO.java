@@ -2,6 +2,7 @@ package org.example.dao.jdbc;
 
 import org.apache.log4j.Logger;
 import org.example.ConnectionPool;
+import org.example.dao.interfaces.IRegionsDAO;
 import org.example.models.Regions;
 
 import java.sql.Connection;

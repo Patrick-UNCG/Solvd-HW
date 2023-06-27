@@ -2,6 +2,7 @@ package org.example.dao.jdbc;
 
 import org.apache.log4j.Logger;
 import org.example.ConnectionPool;
+import org.example.dao.interfaces.IUniversitiesDAO;
 import org.example.models.Universities;
 
 import java.sql.Connection;
@@ -20,7 +21,7 @@ public class UniversitiesDAO implements IUniversitiesDAO {
     public Universities getUniversityById(int id) {
         try{
             connection = connectionPool.retrieve();
-            pr = connection.prepareStatement("Select * from Universities.xml where University_ID=?");
+            pr = connection.prepareStatement("Select * from Universities where University_ID=?");
             pr.setInt(1, id);
             pr.execute();
             resultSet = pr.getResultSet();

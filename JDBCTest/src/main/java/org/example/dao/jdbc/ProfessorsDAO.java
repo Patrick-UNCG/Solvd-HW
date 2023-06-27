@@ -3,6 +3,7 @@ package org.example.dao.jdbc;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.example.ConnectionPool;
+import org.example.dao.interfaces.IProfessorsDAO;
 import org.example.models.Professors;
 
 import java.sql.Connection;

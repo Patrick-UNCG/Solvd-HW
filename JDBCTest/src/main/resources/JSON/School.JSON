@@ -1,0 +1,95 @@
+{
+  "school": {
+    "students": {
+      "student": [
+        {
+          "studentId": 1,
+          "studentFirstName": "John",
+          "studentLastName": "Smith",
+          "studentUniversityId": 1
+        },
+        {
+          "studentId": 2,
+          "studentFirstName": "Mary",
+          "studentLastName": "Johnson",
+          "studentUniversityId": 1
+        },
+        {
+          "studentId": 3,
+          "studentFirstName": "Jesse",
+          "studentLastName": "Robinson",
+          "studentUniversityId": 1
+        },
+        {
+          "studentId": 4,
+          "studentFirstName": "Susie",
+          "studentLastName": "Le",
+          "studentUniversityId": 1
+        }
+      ]
+    },
+    "professors": {
+      "professor": [
+        {
+          "professorId": 1,
+          "professorFirstName": "Jerome",
+          "professorLastName": "Dilly"
+        },
+        {
+          "professorId": 2,
+          "professorFirstName": "Gianna",
+          "professorLastName": "Steinkamp"
+        },
+        {
+          "professorId": 3,
+          "professorFirstName": "Tara",
+          "professorLastName": "Cook"
+        },
+        {
+          "professorId": 4,
+          "professorFirstName": "D",
+          "professorLastName": "Bean"
+        }
+      ]
+    },
+    "courses": {
+      "course": [
+        {
+          "courseId": 1,
+          "courseName": "Biology"
+        },
+        {
+          "courseId": 2,
+          "courseName": "Calculus"
+        },
+        {
+          "courseId": 3,
+          "courseName": "History"
+        }
+      ]
+    },
+    "universities": {
+      "university": {
+        "universityId": 1,
+        "universityName": "Harvard",
+        "universityAddressId": 1
+      }
+    },
+    "regions": {
+      "region": [
+        {
+          "regionId": 1,
+          "regionName": "North America"
+        },
+        {
+          "regionId": 2,
+          "regionName": "South America"
+        },
+        {
+          "regionId": 3,
+          "regionName": "Europe"
+        }
+      ]
+    }
+  }
+}

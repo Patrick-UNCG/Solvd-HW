@@ -2,6 +2,7 @@ package org.example.dao.jdbc;
 
 import org.apache.log4j.Logger;
 import org.example.ConnectionPool;
+import org.example.dao.interfaces.IStudentDAO;
 import org.example.models.Student;
 
 import java.sql.*;

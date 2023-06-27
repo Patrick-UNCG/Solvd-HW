@@ -43,4 +43,8 @@ public class Courses {
                 ", courseName='" + courseName + '\'' +
                 '}';
     }
+
+    public void acceptStudent(){
+        System.out.println("Student Accepted!");
+    }
 }
